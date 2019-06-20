@@ -9,6 +9,12 @@ pipeline {
         stage('Build') {
             steps {
                 echo '草，这么卡的么'
+                sh "------"
+                sh "node -v"
+                sh "npm -v"
+                sh "------"
+                sh "npm config set registry http://r.cnpmjs.org"
+                sh "npm install"
             }
         }
     }
