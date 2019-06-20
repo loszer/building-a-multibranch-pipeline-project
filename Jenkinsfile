@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "npm install --registry=https://registry.npm.taobao.org"
+                echo '草，这么卡的么'
             }
         }
     }
